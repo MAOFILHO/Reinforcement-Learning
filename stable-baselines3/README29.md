@@ -173,7 +173,6 @@ The project is organized as five sequential experiments, each a standalone scrip
 | 4 | Algorithm Comparison | PPO vs A2C | Side-by-side benchmark chart |
 | 5 | GIF Recording | PPO + DQN | Animated agent rollouts |
 
-<img width="1058" height="371" alt="Project structure" src="https://github.com/user-attachments/assets/c45582bd-827a-4665-b823-2f99ca13c4ad" />
 
 ---
 
