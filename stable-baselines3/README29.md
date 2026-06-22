@@ -46,7 +46,7 @@ A structured, end-to-end experimentation workflow built on Stable-Baselines3 tha
 - **Automated model lifecycle** — `EvalCallback` checkpoints the best model automatically; train → save → reload → evaluate demonstrates the full persistence cycle.
 - **Quantitative evaluation** — agents are scored as mean ± std reward over 20 independent episodes against documented "solved" thresholds, not eyeballed.
 - **Algorithm benchmarking** — a controlled head-to-head (PPO vs A2C on identical environment and seed) isolates convergence-speed and stability differences.
-- **Visual verification** — trained agents are recorded as GIFs, providing immediate visual proof the policy works.
+- **Visual verification** — trained agents are recorded as GIFs, providing immediate visual proof that the policy works.
 - **Validated foundation** — the underlying SB3 library passes 873 unit tests at 95% code coverage, confirming the implementations are trustworthy baselines.
 
 ---
@@ -293,7 +293,7 @@ stable-baselines3/
 
 | Skill | Evidence |
 |---|---|
-| **RL algorithm fluency** | Trained on-policy (PPO/A2C) and off-policy (DQN) agents and explained their behavioral differences |
+| **RL algorithm fluency** | Trained on-policy (PPO/A2C) and off-policy (DQN) agents and explained their behavioural differences |
 | **Experiment discipline** | Seeded, reproducible runs with TensorBoard tracking |
 | **ML lifecycle** | Train → checkpoint → save → reload → evaluate, fully automated |
 | **Quantitative rigor** | Mean ± std evaluation against documented solved-thresholds |
@@ -324,10 +324,28 @@ This project builds on the Stable-Baselines3 library. To cite SB3 in publication
 - **JMLR Paper:** https://jmlr.org/papers/volume22/20-1364/20-1364.pdf
 - **RL Baselines3 Zoo (training framework):** https://github.com/DLR-RM/rl-baselines3-zoo
 
+## Maintainers
+
+Stable-Baselines3 is currently maintained by [Ashley Hill](https://github.com/hill-a) (aka @hill-a), [Antonin Raffin](https://araffin.github.io/) (aka [@araffin](https://github.com/araffin)), [Maximilian Ernestus](https://github.com/ernestum) (aka @ernestum), [Adam Gleave](https://github.com/adamgleave) (@AdamGleave), [Anssi Kanervisto](https://github.com/Miffyli) (@Miffyli) and [Quentin Gallouédec](https://github.com/qgallouedec) (@qgallouedec).
+
+**Important Note: We do not provide technical support or consulting** and do not answer personal questions via email.
+Please post your question on the [RL Discord](https://discord.com/invite/xhfNqQv), [Reddit](https://www.reddit.com/r/reinforcementlearning/), or [Stack Overflow](https://stackoverflow.com/) in that case.
+
+
+## How To Contribute
+
+For anyone interested in making the baselines better, there is still some documentation that needs to be done.
+If you want to contribute, please read [**CONTRIBUTING.md**](./CONTRIBUTING.md) guide first.
+
+## Acknowledgments
+
+The initial work to develop Stable Baselines3 was partially funded by the project *Reduced Complexity Models* from the *Helmholtz-Gemeinschaft Deutscher Forschungszentren*, and by the EU Horizon 2020 Research and Innovation Programme under grant number 951992 ([VeriDream](https://www.veridream.eu/)).
+
+
 ---
 
 ## Author
 
-**Marcos Oliveira** — [LinkedIn](https://www.linkedin.com/in/mfilho1/) | [GitHub](https://github.com/MAOFILHO)
+**Marcos Oliveira** — [LinkedIn](https://www.linkedin.com/in/mfilho1/) | [GitHub](https://github.com/MAOFILHO) | [Website](https://maofilho.github.io/) 
 
 Built on Stable-Baselines3 and PyTorch. SB3 is maintained by the DLR-RM team and released under the MIT License.
