@@ -12,13 +12,13 @@
 
 Trained, benchmarked, and evaluated multiple deep reinforcement learning agents using **Stable-Baselines3 (SB3)** — the industry-standard PyTorch RL library. This project implements a full experimental workflow across three algorithm families (on-policy, off-policy, and actor-critic) on classic control and physics-simulation environments, with **TensorBoard experiment tracking**, **automated model persistence**, and **reproducible evaluation metrics**.
 
-**Key differentiator:** This is not a single-model demo. It's a structured benchmark comparing algorithm convergence behavior, with quantitative evaluation (mean ± std reward over 20 episodes), live training telemetry, and recorded agent rollouts — the same workflow used to validate RL systems before production deployment.
+**Key differentiator:** This is not a single-model demo. It's a structured benchmark comparing algorithm convergence behaviour, with quantitative evaluation (mean ± std reward over 20 episodes), live training telemetry, and recorded agent rollouts — the same workflow used to validate RL systems before production deployment.
 
 ---
 
 ## The Problem
 
-Reinforcement learning is one of the hardest branches of machine learning to operationalize. Unlike supervised learning, where you have a fixed labeled dataset, RL agents learn by trial and error through millions of interactions with an environment — and that process is notoriously unstable, sample-inefficient, and hard to reproduce.
+Reinforcement learning is one of the hardest branches of machine learning to operationalize. Unlike supervised learning, where you have a fixed labelled dataset, RL agents learn by trial and error through millions of interactions with an environment — and that process is notoriously unstable, sample-inefficient, and hard to reproduce.
 
 For teams adopting RL, the practical barriers are steep:
 
@@ -27,10 +27,10 @@ For teams adopting RL, the practical barriers are steep:
 | Algorithm implementations differ subtly across papers | A "PPO" in one repo behaves differently from another — results don't replicate |
 | Training is unstable and seed-sensitive | The same code can converge brilliantly or collapse, run to run |
 | No standard way to track or compare experiments | Tuning becomes guesswork without reward curves and telemetry |
-| Choosing the right algorithm per problem is non-obvious | On-policy vs off-policy vs actor-critic each fit different action spaces |
+| Choosing the right algorithm per problem is non-obvious | On-policy vs off-policy vs actor-critic, each fits different action spaces |
 | Models are hard to persist, reload, and evaluate consistently | Hard to move from "it trained" to "it works, measurably" |
 
-This matters commercially. The reinforcement learning market was valued at over **$52 billion in 2024**, with large enterprises representing roughly **70% of demand** and the BFSI sector alone accounting for about **20% of the market** — driven by algorithmic trading, fraud detection, and risk management use cases. RL adoption is accelerating across robotics, autonomous vehicles, supply chain optimization, and healthcare, but the field's reproducibility and tooling gap remains the primary obstacle to moving prototypes into production.
+This matters commercially. The reinforcement learning market was valued at over **$52 billion in 2024**, with large enterprises representing roughly **70% of demand** and the BFSI sector alone accounting for about **20% of the market** — driven by algorithmic trading, fraud detection, and risk management use cases. RL adoption is accelerating across robotics, autonomous vehicles, supply chain optimization, and healthcare, but the field's reproducibility and tooling gap remain the primary obstacle to moving prototypes into production.
 
 **The result:** practitioners spend more time fighting unstable training and non-reproducible baselines than solving their actual problem.
 
@@ -107,19 +107,13 @@ A structured, end-to-end experimentation workflow built on Stable-Baselines3 tha
 | TRPO<sup>[1](#f1)</sup>  | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark:  | :heavy_check_mark: | :heavy_check_mark: |
 | Maskable PPO<sup>[1](#f1)</sup>   | :x: | :x: | :heavy_check_mark: | :heavy_check_mark:  | :heavy_check_mark: | :heavy_check_mark:  |
 
-<b id="f1">1</b>: Implemented in [SB3 Contrib](https://github.com/Stable-Baselines-Team/stable-baselines3-contrib) GitHub repository.
-
-Actions `gymnasium.spaces`:
- * `Box`: A N-dimensional box that contains every point in the action space.
- * `Discrete`: A list of possible actions, where only one action can be used per timestep.
- * `MultiDiscrete`: A list of possible actions, where each timestep only one action of each discrete set can be used.
- * `MultiBinary`: A list of possible actions, where each timestep any of the actions can be used in any combination.
-
 ---
 
 ## Setup
 
 **Note:** Stable-Baselines3 supports PyTorch >= 2.8 and requires Python 3.10+.
+
+<img width="1071" height="218" alt="Install dependencies" src="https://github.com/user-attachments/assets/9d58cc33-0cb0-4b00-b83d-9357676a9e2c" />
 
 ### Install dependencies
 
@@ -134,7 +128,8 @@ pip install 'gymnasium[box2d]'
 pip install imageio imageio-ffmpeg
 ```
 
-<img width="1071" height="218" alt="Install dependencies" src="https://github.com/user-attachments/assets/9d58cc33-0cb0-4b00-b83d-9357676a9e2c" />
+<img width="1058" height="371" alt="Screenshot 2026-06-22 at 12 23 15 PM" src="https://github.com/user-attachments/assets/c9abe416-fd09-4872-8cc5-5912f08ba3fe" />
+
 
 ### Validate the installation
 
